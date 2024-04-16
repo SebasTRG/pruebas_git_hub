@@ -11,11 +11,11 @@ package utils;
 public class Utils {
     
     
-    public static double division(int a, int b) throws ArithmeticException{
+    public static double division(int a, int b) throws IllegalArgumentException{
         if(b!=0){
             return a/b;
         }else{
-            throw new ArithmeticException("división por cero no valido");
+            throw new IllegalArgumentException("división por cero no valido");
         }
         
     }
